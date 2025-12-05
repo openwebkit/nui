@@ -10,7 +10,6 @@
     "typecheck": "tsc --noEmit"
   },
   "prepare": "npm run build",
-  
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -50,16 +49,12 @@
     "vite": "^7.2.2",
     "vitest": "^4.0.9"
   },
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs.js"
-    }
-  },
-  "files": ["dist"],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/<OWNER>/<REPO>.git"
@@ -70,6 +65,6 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "sideEffects": [
-    "**/*.css"
+    "*.css"
   ]
 }

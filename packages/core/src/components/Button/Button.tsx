@@ -1,4 +1,3 @@
-"use client";
 import { cn } from "@/utils";
 // import Spinner from "../spinner";
 import { ButtonVariant, type IButtonProps, useButtonProps } from "./useButton";
@@ -64,7 +63,7 @@ const Button = forwardRef<HTMLButtonElement, IButtonProps>((props, ref) => {
           "absolute h-full w-full flex items-center gap-2 justify-center left-0 top-0",
           {
             hidden: !props.loading,
-          },
+          }
         )}
       >
         <Spinner

@@ -1,4 +1,3 @@
-"use client";
 import { type VariantProps, cva } from "class-variance-authority";
 import type React from "react";
 import { type CSSProperties } from "react";
@@ -226,7 +225,7 @@ const buttonVariants = cva(
         className: "rounded-xl",
       },
     ],
-  },
+  }
 );
 
 type HTMLButtonProps = Omit<
@@ -277,7 +276,7 @@ export const useButtonProps = ({
         fullWidth: fullWidth,
         disabled: disabled ? true : false,
       }),
-      className,
+      className
     ),
     style: {
       minWidth: minWidth,
