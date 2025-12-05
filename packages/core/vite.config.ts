@@ -12,7 +12,7 @@ const copyTailwindCss = (): Plugin => ({
   generateBundle() {
     const srcCss = path.resolve(__dirname, "src/tailwind.css");
     const destCss = path.resolve(__dirname, "dist/tailwind.css");
-    
+
     try {
       fs.copyFileSync(srcCss, destCss);
       console.log("✓ Copied tailwind.css to dist/");

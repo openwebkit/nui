@@ -1,5 +1,5 @@
 {
-  "name": "@nui/core",
+  "name": "@openwebkit/nui",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -57,12 +57,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<OWNER>/<REPO>.git"
+    "url": "git+https://github.com/openwebkit/nui.git"
   },
-  "homepage": "https://github.com/<OWNER>/<REPO>#readme",
+  "homepage": "https://github.com/openwebkit/nui#readme",
+  "bugs": {
+    "url": "https://github.com/openwebkit/nui/issues"
+  },
   "license": "MIT",
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "tailwind",
+    "tailwindcss",
+    "design-system"
+  ],
+  "author": "Nitesh Sinha <niteshsinha1707@gmail.com>",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "access": "public"
   },
   "sideEffects": [
     "*.css"
