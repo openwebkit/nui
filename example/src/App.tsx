@@ -1,10 +1,11 @@
-import { useState } from "react";
 import "./App.css";
-
+import { Button } from "@nui/ui-kit";
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
+  return (
+    <>
+      <Button>Button</Button>
+    </>
+  );
 }
 
 export default App;

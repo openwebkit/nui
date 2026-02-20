@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nui/ui-kit": "file:../packages/ui-kit/nui-ui-kit-0.1.0.tgz",
     "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "@openwebkit/nui": "workspace:*"
+    "react-dom": "19.2.0"
   },
   "devDependencies": {
     "@eslint/js": "9.39.1",

@@ -2,3 +2,7 @@ node_modules
 package-lock.json
 *storybook.log
 storybook-static
+build
+dist
+.DS_Store
+.npmrc

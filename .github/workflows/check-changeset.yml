@@ -1,0 +1,32 @@
+name: Changeset Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  changeset-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ✅ Skip release PR
+      - name: Skip release PR
+        if: github.actor == 'github-actions[bot]'
+        run: |
+          echo "Release PR detected — skipping changeset check"
+          exit 0
+
+      - name: Require changeset
+        run: |
+          CHANGED=$(git diff --name-only origin/main...HEAD)
+
+          if echo "$CHANGED" | grep -qvE '(^docs/|\.md$|\.github/)'; then
+            if ! echo "$CHANGED" | grep -q ".changeset/"; then
+              echo "❌ Missing changeset"
+              exit 1
+            fi
+          fi
