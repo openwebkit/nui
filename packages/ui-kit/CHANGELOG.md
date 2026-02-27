@@ -1,4 +1,4 @@
-# @nui/ui-kit
+# @openwebkit/ui-kit
 
 ## 0.2.0
 

@@ -12,7 +12,7 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@nui/ui-kit": "workspace:*",
+    "@openwebkit/ui-kit": "workspace:*",
     "formik": "^2.4.6"
   },
   "devDependencies": {

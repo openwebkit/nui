@@ -11,4 +11,4 @@
 - d957553: run drafter only when version pr gets merged
 - Updated dependencies [d957553]
 - Updated dependencies [8a8348b]
-  - @nui/ui-kit@0.2.0
+  - @openwebkit/ui-kit@0.2.0

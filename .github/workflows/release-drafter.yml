@@ -1,24 +1,22 @@
 name: Release Drafter
 
 on:
-  push:
-    branches:
-      - main
+  pull_request_target:
+    types: [closed]
+    branches: [main]
 
 permissions:
   contents: write
 
 jobs:
   update_release_draft:
-    # ✅ Run ONLY for Version Packages merge
     if: |
-      github.actor == 'github-actions[bot]' &&
-      contains(github.event.head_commit.message, 'Version Packages')
+      github.event.pull_request.merged == true &&
+      contains(github.event.pull_request.labels.*.name, 'release')
 
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run Release Drafter
-        uses: release-drafter/release-drafter@v6
+      - uses: release-drafter/release-drafter@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
