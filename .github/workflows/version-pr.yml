@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 20
 
-      - run: pnpm install --ignore-scripts
+      - run: pnpm install --frozen-lockfile
 
       - name: Create Version PR
         id: changesets
