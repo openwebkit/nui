@@ -1,0 +1,76 @@
+{
+  "name": "@nui/ui-kit",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json ",
+    "lint": "eslint .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "typecheck": "tsc --noEmit"
+  },
+  "prepare": "npm run build",
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18",
+    "tailwindcss": "4.1.18"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/material": "7.3.6",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "0.562.0",
+    "tailwind-merge": "3.4.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "10.0.7",
+    "@storybook/addon-docs": "10.0.7",
+    "@storybook/addon-vitest": "10.0.7",
+    "@storybook/react-vite": "10.0.7",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.2.7",
+    "react": "19.2.3",
+    "storybook": "10.1.10",
+    "tailwindcss": "4.1.18",
+    "vite": "7.3.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openwebkit/nui.git"
+  },
+  "homepage": "https://github.com/openwebkit/nui#readme",
+  "bugs": {
+    "url": "https://github.com/openwebkit/nui/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "tailwind",
+    "tailwindcss",
+    "design-system"
+  ],
+  "author": "Nitesh Sinha <niteshsinha1707@gmail.com>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "sideEffects": [
+    "*.css"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "@openwebkit/nui-form",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@nui/ui-kit": "workspace:*",
+    "formik": "^2.4.6"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "typescript": "5.9.3",
+    "vite": "7.3.0"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openwebkit/nui.git"
+  },
+  "homepage": "https://github.com/openwebkit/nui#readme",
+  "bugs": {
+    "url": "https://github.com/openwebkit/nui/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "forms",
+    "formik",
+    "ui",
+    "components"
+  ],
+  "author": "Nitesh Sinha <niteshsinha1707@gmail.com>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
+}
