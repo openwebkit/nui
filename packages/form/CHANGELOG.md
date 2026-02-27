@@ -1,5 +1,13 @@
 # @openwebkit/nui-form
 
+## 0.2.1
+
+### Patch Changes
+
+- 08b8ea5: changes to test package bug fixes
+- Updated dependencies [08b8ea5]
+  - @openwebkit/ui-kit@0.2.1
+
 ## 0.2.0
 
 ### Minor Changes
