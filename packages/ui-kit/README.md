@@ -1,18 +1,18 @@
-# @nui/ui-kit
+# @openwebkit/ui-kit
 
 A small UI component package built with Tailwind and Vite.
 
 Install
 
 ```bash
-npm install @nui/ui-kit
+npm install @openwebkit/ui-kit
 ```
 
 Usage
 
 ```tsx
 import React from "react";
-import { Button } from "@nui/ui-kit";
+import { Button } from "@openwebkit/ui-kit";
 
 export default function App() {
   return <Button>Click me</Button>;
