@@ -1,5 +1,11 @@
 # @openwebkit/ui-kit
 
+## 0.2.1
+
+### Patch Changes
+
+- 08b8ea5: changes to test package bug fixes
+
 ## 0.2.0
 
 ### Minor Changes
